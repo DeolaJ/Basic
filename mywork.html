@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>
+		Funny coding
+	</title>
+	<style>
+	ul {  padding:0; margin: 0 auto; width: 800px; height: 29px;}
+	li {list-style-type: none; padding:0; margin: 0 auto;background-color: blue;  } 
+	#topmenu a { width: 70px; ; text-decoration: none; float: left;  font-size: 20px; margin-right: 20px; text-align: center; background-color: blue; line-height: 29px; border-radius: 70px 26px 70px 26px;}
+	a:hover {border-bottom: 2px solid black;}
+	</style>	
+</head>
+<body>
+<h1>
+first a menu that I learnt
+</h1>
+<nav id="topmenu">
+	<ul>
+		<li><a href="">a</a></li>
+		<li><a href="">b</a></li>
+		<li><a href="">c</a></li>
+		<li><a href="">d</a></li>
+		<li><a href="">e</a></li>
+		<li><a href="">f</a></li>
+	</ul>
+</nav>
+<br />
+<button id="color">Change color!</button>
+<script>
+document.getElementById("color").onclick = changeColor;
+var currentColor = "blue";
+function changeColor() { 
+			if(currentColor == "blue") {
+			document.body.style.color = "red";
+			currentColor = "red";	
+			} 
+			else {
+			document.body.style.color = "blue";
+			currentColor="blue";}
+		return currentColor;	
+}
+
+</script>
+</body>
+</html>

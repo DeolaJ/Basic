@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8' />
+	<title>
+	 	css practice
+	</title>
+	<style>
+	html {
+		background-color: gray;
+	}
+	body {
+		width: 700px;
+		font-style: arial;
+		line-height: 1.5;
+		margin: 0 auto;
+		background-color: white;
+	}
+	article, h2 ,p {
+		margin-left: 10px;
+	}
+	header h1 { font-size: 2em;
+		 text-align: center;
+		 background-color: #cce;
+		 width: 700px;
+		 margin-top: 0;
+	}
+	h2, h3 {
+		font-size: 1.5em;
+		margin-top: 15px;
+		color: #cce;
+	}
+	ol {
+		list-style-type: none;
+
+	}
+	a {
+		padding: 3px;
+		margin-bottom: 3px;
+		text-align: center;
+		width: 200px;
+		background-color: maroon;
+		text-decoration: none;
+		display: block;
+		color: black;
+
+	}
+	a:visited {
+		background-color: green;
+	}
+	a:hover {
+		background-color: blue;
+	}
+	a:active {
+		background-color: red;
+	}
+	footer {
+		background-color: black;
+		text-align: center;
+		color: white;
+		width: 700px;
+		height: 40px;
+		padding: 5px 0 1px;
+	}
+
+.checkbox{
+display:none;
+}
+
+.checkbox + label{
+/*Style for checkbox normal*/
+width:16px;
+height:16px;
+}
+
+.checkbox::checked + label, label.checked{
+/*Style for checkbox checked*/
+}
+	</style>
+</head>
+<body>
+<header>
+<h1> This is the main first heading </h1>
+</header>
+<h2> This is the second heading </h2>
+<p> Lorem ipsum is a type of latin word that is used for random css or html asessment of stuff. It is used to fill up white space tht isn't treally in use as content. </p>
+<article>
+<h3> Now this is for a particular set of links </h3>
+<ol>
+<li><a href=''>class</a></li>
+<li><a href=''>black</a></li>
+<li><a href=''>services</a></li>
+<li><a href=''>sleep</a></li>
+<li><a href=''>turn</a></li>
+</ol>
+</article>
+
+
+
+<input type="checkbox" id="first" />
+<label for="first">&nbsp;</label>
+<footer> Copywright @Deola Corporation </footer>
+</body>
+</html>
